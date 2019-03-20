@@ -23,11 +23,18 @@ Open anaconda prompt and type in Jupyter Notebook to open Jupyter Notebook using
 For running
 ```
 exec("C03M%d = pyBigWig.open(\"/Users/gurchetan/Desktop/BioData/training/C03M%d.bigwig\")" %(i, i))
+exec("C04M%d = pyBigWig.open(\"/Users/gurchetan/Desktop/BioData/validation/C04M%d.bigwig\")" %(i, i))
+exec("C09M%d = pyBigWig.open(\"/Users/gurchetan/Desktop/BioData/validation/C09M%d.bigwig\")" %(i, i))
+exec("C%dM%d = pyBigWig.open(\"/Users/gurchetan/Desktop/BioData/validation/C%dM%d.bigwig\")" %(j, i, j, i))
+exec("C%dM%d = pyBigWig.open(\"/Users/gurchetan/Desktop/BioData/training/C%dM%d.bigwig\")" %(j, i, j, i))
 ```
 need
 ```
 import pyBigWig
 ```
+
+My part is building logic to read through BigWig data dynamiccally working with Gurchentan Singh to complete the data proccessing.
+
 **Authors:**
 
 - Tam Bui
